@@ -5,7 +5,7 @@ The application demonstrates real-world cloud engineering practices including In
 
 ---
 
-## 🚀 What This Project Does
+## What This Project Does
 
 - Accepts a JSON request containing calorie targets, protein goals, food dislikes, and budget
 - Generates a structured daily meal plan using OpenAI
@@ -15,7 +15,7 @@ The application demonstrates real-world cloud engineering practices including In
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
 **Client → API Gateway → AWS Lambda → OpenAI API → DynamoDB**
 
@@ -29,7 +29,7 @@ The application demonstrates real-world cloud engineering practices including In
 
 ---
 
-## 🔐 Security & Best Practices
+## Security & Best Practices
 
 - OpenAI API key stored as a **SecureString** in SSM Parameter Store
 - No secrets hard-coded in source code
@@ -39,7 +39,7 @@ The application demonstrates real-world cloud engineering practices including In
 
 ---
 
-## 🧠 Intelligent Fallback Behavior
+## Intelligent Fallback Behavior
 
 If OpenAI returns an HTTP **429 (rate limit)** or other errors:
 - The API **does not fail**
@@ -51,7 +51,7 @@ This mirrors real production reliability patterns.
 
 ---
 
-## 📦 Example API Request
+## Example API Request
 
 ```json
 POST /generate
