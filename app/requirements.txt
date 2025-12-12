@@ -1,0 +1,1 @@
+# No external libraries required; Lambda's built-in boto3/botocore are used.
